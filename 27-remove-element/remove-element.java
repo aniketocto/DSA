@@ -6,9 +6,9 @@ class Solution {
             if(nums[i] != val)
             {
                 nums[j] = nums[i];
-                j++; 
+                j++;
             }
         }
-        return j;
+        return j++;
     }
 }
