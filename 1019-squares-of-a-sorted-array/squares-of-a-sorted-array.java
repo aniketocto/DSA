@@ -10,13 +10,11 @@ class Solution {
             int lsq = nums[left] * nums[left];
             int rsq = nums[right] * nums[right];
 
-            if(lsq > rsq)
-            {
+            if(lsq > rsq) {
                 res[pos] = lsq;
                 left++;
             }
-            else
-            {
+            else {
                 res[pos] = rsq;
                 right--;
             }
