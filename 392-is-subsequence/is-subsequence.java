@@ -2,7 +2,6 @@ class Solution {
     public boolean isSubsequence(String s, String t) {
         char[] sArr = s.toCharArray();
         char[] tArr = t.toCharArray();
-        char[] res =  new char[sArr.length];
         int i = 0;
         int j = 0;
 
@@ -10,7 +9,6 @@ class Solution {
         {
             if(sArr[i] == tArr[j])
             {
-                res[i] = sArr[i];
                 i++;
                 j++;
             }
