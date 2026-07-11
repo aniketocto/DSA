@@ -5,8 +5,16 @@ class Solution {
 
         for(int i = 0; i < prices.length; i++)
         {
-            minPrice = Math.min(minPrice, prices[i]);
-            maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+            if(prices[i] < minPrice)
+            {
+                minPrice = prices[i];
+            }
+            // minPrice = Math.min(minPrice, prices[i]);
+            if(prices[i] - minPrice > maxProfit)
+            {
+                maxProfit = prices[i] - minPrice;
+            }
+            // maxProfit = Math.max(maxProfit, prices[i] - minPrice);
         }
         return maxProfit;
     }
